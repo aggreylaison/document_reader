@@ -1,5 +1,5 @@
-from FlagEmbedding import BGEM3FlagModel
+from sentence_transformers import SentenceTransformer
 
-model = BGEM3FlagModel("BAAI/bge-m3", use_bf16=True)
+model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
 print("model was loaded successfully")
