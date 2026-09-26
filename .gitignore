@@ -5,10 +5,18 @@ __pycache__/
 *$py.class
 
 # Virtual environments
-.venv/
+.venv*/
 venv/
 env/
 ENV/
+
+# Local source document and office lock files
+Crop_Recommendation_Presentation_Notes.docx
+.~lock.*#
+
+__pycache__/
+*.pyc
+.env
 
 # Environment and local configuration
 .env

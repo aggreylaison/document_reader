@@ -1,7 +1,16 @@
+import sys
+sys.path.append("src")
+
 import streamlit as st
+from rag import ask
 
-st.write("hello world")
 
-st.text_input("your question")
+st.title("📚 Document Q&A")
 
-st.button("click me")
+question = st.text_input("Ask a question about your document:")
+
+if question:
+    answer = ask(question)
+
+    st.subheader("Answer")
+    st.write(answer)

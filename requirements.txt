@@ -1,0 +1,7 @@
+streamlit
+sentence-transformers
+psycopg2-binary
+pgvector
+ollama
+torch
+transformers
