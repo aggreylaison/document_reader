@@ -6,8 +6,8 @@ def search_chunks(conn, query_embedding, top_k=5):
     
     cur.execute(
         """
-        SELECT id, content, embedding <=> %s AS distance
-        FROM document_chunks
+        SELECT id, content, embeddings <=> %s AS distance
+        FROM chunks_table
         ORDER BY distance
         LIMIT %s
         """,
